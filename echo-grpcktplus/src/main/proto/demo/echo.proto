@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package demo;
+
+import "google/protobuf/wrappers.proto";
+
+service EchoService {
+  rpc Echo(google.protobuf.StringValue) returns (google.protobuf.StringValue) {}
+}
