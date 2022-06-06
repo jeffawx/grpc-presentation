@@ -3,6 +3,7 @@ pluginManagement {
     val protobufPluginVersion: String by settings
     val springBootVersion: String by settings
     val grpcktplusVersion: String by settings
+    val wireVersion: String by settings
 
     plugins {
         kotlin("jvm") version kotlinVersion
@@ -10,6 +11,7 @@ pluginManagement {
         id("com.google.protobuf") version protobufPluginVersion
         id("org.springframework.boot") version springBootVersion
         id("com.airwallex.grpc-spring") version grpcktplusVersion
+        id("com.squareup.wire") version wireVersion
     }
 
     repositories {
