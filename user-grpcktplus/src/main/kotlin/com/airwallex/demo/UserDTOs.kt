@@ -4,7 +4,7 @@ import javax.validation.constraints.Email
 import javax.validation.constraints.NotEmpty
 import javax.validation.constraints.Size
 
-data class CreateUserRequest(
+class CreateUserRequest(
 
     @get:Size(min = 2, max = 10, message = "name should contain 2-10 characters")
     val name: String,
@@ -15,10 +15,10 @@ data class CreateUserRequest(
     val email: String?,
 )
 
-data class SearchUserRequest(
+class SearchUserRequest(
 
     @get:NotEmpty
     val name: String
 )
 
-data class SearchUserResponse(val users: List<User>)
+class SearchUserResponse(val users: List<User>)
